@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>First JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+
+    <div class="second-div"> 
+         <div class="score-div">
+            <h2 class="team-name">Team 1</h2>
+            <h1 id="team1-score" class="score">00</h1>
+        </div>
+
+        <div class="time-div">
+            <h3 class="team-name">Time</h3>
+            <h2 class="time">00:00</h2>
+        </div>
+
+        <div class="score-div">
+            <h2 class="team-name">Team 2</h2>
+            <h1 id="team2-score" class="score">00</h1>
+        </div>
+
+       
+
+    
+
+        
+
+    <script>
+      function actionButton(){
+        let t1_score = document.getElementById("team1-score");
+
+        let t1_actual_score = t1_score.innerText;
+
+        t1_score.innerText = parseInt(t1_actual_score) + 1;
+    }
+
+    let button = document.getElementById("team1-score");
+
+    button.addEventListener("click", actionButton);
+
+
+    function action2Button(){
+        let t2_score = document.getElementById("team2-score");
+
+        let t2_actual_score = t2_score.innerText;
+
+        t2_score.innerText = parseInt(t2_actual_score) + 1;
+    }
+
+    let button2 = document.getElementById("team2-score");
+
+    button2.addEventListener("click", action2Button);  
+    </script>
+</body>
+</html>
